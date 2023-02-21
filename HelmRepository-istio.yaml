@@ -1,0 +1,47 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  annotations:
+    reconcile.fluxcd.io/requestedAt: "2023-02-21T11:39:56.656328-03:00"
+  creationTimestamp: "2023-02-21T14:01:51Z"
+  finalizers:
+  - finalizers.fluxcd.io
+  generation: 1
+  labels:
+    app.kubernetes.io/part-of: istio
+    kustomize.toolkit.fluxcd.io/name: istio-system
+    kustomize.toolkit.fluxcd.io/namespace: flux-system
+  name: istio
+  namespace: istio-system
+  resourceVersion: "1374523"
+  uid: 94c25c56-e3d7-4315-9adb-320478494c64
+spec:
+  interval: 1h0m0s
+  provider: generic
+  timeout: 60s
+  url: https://istio-release.storage.googleapis.com/charts
+status:
+  artifact:
+    checksum: 03893ff0639da51b12f6daa84fbc68eb6d68bf654f47a8f815236c6bd9842196
+    digest: sha256:03893ff0639da51b12f6daa84fbc68eb6d68bf654f47a8f815236c6bd9842196
+    lastUpdateTime: "2023-02-21T14:01:53Z"
+    path: helmrepository/istio-system/istio/index-03893ff0639da51b12f6daa84fbc68eb6d68bf654f47a8f815236c6bd9842196.yaml
+    revision: sha256:03893ff0639da51b12f6daa84fbc68eb6d68bf654f47a8f815236c6bd9842196
+    size: 123260
+    url: http://source-controller.flux-system.svc.cluster.local./helmrepository/istio-system/istio/index-03893ff0639da51b12f6daa84fbc68eb6d68bf654f47a8f815236c6bd9842196.yaml
+  conditions:
+  - lastTransitionTime: "2023-02-21T14:01:53Z"
+    message: 'stored artifact: revision ''sha256:03893ff0639da51b12f6daa84fbc68eb6d68bf654f47a8f815236c6bd9842196'''
+    observedGeneration: 1
+    reason: Succeeded
+    status: "True"
+    type: Ready
+  - lastTransitionTime: "2023-02-21T14:01:53Z"
+    message: 'stored artifact: revision ''sha256:03893ff0639da51b12f6daa84fbc68eb6d68bf654f47a8f815236c6bd9842196'''
+    observedGeneration: 1
+    reason: Succeeded
+    status: "True"
+    type: ArtifactInStorage
+  lastHandledReconcileAt: "2023-02-21T11:39:56.656328-03:00"
+  observedGeneration: 1
+  url: http://source-controller.flux-system.svc.cluster.local./helmrepository/istio-system/istio/index.yaml
